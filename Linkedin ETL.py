@@ -9,8 +9,9 @@ from datetime import date
 today = date.today()
 
 chrome_options = Options()
-chrome_options.add_argument("--lang=en-US")
-chrome_options.add_argument("--window-size=1920,1080")
+#chrome_options.add_argument("--lang=en-US")
+#chrome_options.add_argument("--window-size=1920,1080")
+chrome_options.headless = True
 driver = webdriver.Chrome(chrome_options=chrome_options)
 
 search_link = 'https://www.linkedin.com/jobs/search/?currentJobId=2884546080&f_E=2&f_JT=F&f_TPR=r86400&geoId=102095887&keywords=data%20analyst&location=California%2C%20United%20States&refresh=true'
